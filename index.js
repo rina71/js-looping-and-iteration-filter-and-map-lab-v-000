@@ -26,6 +26,14 @@ function exactMatch(drivers, value){
   return result
   }
 
+  function exactMatchToList(drivers, value){
+    let result = exactMatch(drivers, value)
+    const newArr = map(result, fuction(eng){
+      return eng.name;
+    })
+    return newArr
+  }
+
 
 
 // function driversWithRevenueOver(drivers,revenue){
