@@ -20,12 +20,11 @@ function driverNamesWithRevenueOver(drivers, number){
 }
 
 function exactMatch(drivers, value){
-  let newArr = [];
-  debugger;
-    if (drivers.filter(item => item === value )){
-      newArr.push(item)
-    }
-      return newArr
+  let result = drivers.filter(obj =>{
+    return obj.name === value.name || obj.revenue === value.revenue
+  }
+  )
+  return result
   }
 
 
