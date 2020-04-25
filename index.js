@@ -27,7 +27,6 @@ function exactMatch(drivers, value){
   }
 
   function exactMatchToList(drivers, value){
-    debugger;
     let result = exactMatch(drivers, value)
     const newArr = result.map(function(eng){
       return eng.name
