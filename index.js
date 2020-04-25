@@ -28,8 +28,8 @@ function exactMatch(drivers, value){
 
   function exactMatchToList(drivers, value){
     debugger;
-    // let result = exactMatch(drivers, value)
-    const newArr = map(result, fuction(eng){
+    let result = exactMatch(drivers, value)
+    const newArr = result.map(fuction(eng){
       return eng.name;
     })
     return newArr
