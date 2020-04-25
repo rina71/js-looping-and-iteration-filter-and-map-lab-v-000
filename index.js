@@ -30,7 +30,7 @@ function exactMatch(drivers, value){
     debugger;
     let result = exactMatch(drivers, value)
     const newArr = result.map(fuction(eng){
-      return eng.name;
+      return eng.name
     })
     return newArr
   }
